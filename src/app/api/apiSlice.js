@@ -3,7 +3,8 @@ import { setCredentials } from '../../features/auth/authSlice'
 
 const baseQuery = fetchBaseQuery({
     // baseUrl: 'http://localhost:3500',
-    baseUrl: 'https://officenotes-be.onrender.com',
+    // baseUrl: 'https://officenotes-be.onrender.com',
+    baseUrl: 'https://officenotes-api.onrender.com',
     credentials: 'include', //send cookies
     prepareHeaders: (headers, { getState }) => {
         const token = getState().auth.token
